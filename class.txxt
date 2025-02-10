@@ -1,0 +1,62 @@
+CLASS, ATTRIBUTES AND METHODS FOR THE APPLICATION
+
+
+Class: TripSuggester
+Attributes:
+•	budget
+•	preferences
+•	travel_mode
+•	duration
+•	currency
+•	destination_service
+Methods:
+•	set_budget() – (to get he budget given by user)
+•	set_preference()
+•	set_travelmode()
+•	set_duration()
+•	get_suggestions()
+•	convert_currency()
+
+Class: DestinationService
+Attributes:
+•	destination
+Methods:
+•	add_destination()
+•	get_alldestination()
+•	filter_bybudget()
+•	filter_bypreference()
+
+
+
+
+
+
+Class: Destination
+Attributes:
+•	id
+•	name
+•	location
+•	cost
+•	activities
+Methods:
+•	get_details()
+
+Class: CalculateCost
+Methods:
+•	calc_totcost() – (calculates the total trip cosr)
+•	convert_currency() – (used for converting currencies)
+
+Class: TravelMode
+Attributes:
+•	mode ( mode of transport)
+•	km_cost
+Methods:
+•	get_travelcost()
+
+Class: Preferences – (it stores and evaluates user preferences)
+Attributes:
+•	activities
+•	climate
+•	cuisine
+Methods:
+•	match_preference()
